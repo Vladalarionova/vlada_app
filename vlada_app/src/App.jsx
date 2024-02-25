@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import ReactDOM from "react-dom/client";
 
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
 		<div className="App">
 			<h1>{values}</h1>
 			<h1>{likes}</h1>
+			<input type="text" value={value}/>
 			<button onClick={Increment}>Increment</button>
 			<button onClick={Decrement}>Decrement</button>
 		</div>
